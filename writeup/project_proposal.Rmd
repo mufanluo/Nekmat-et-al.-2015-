@@ -1,55 +1,14 @@
 ---
-title             : "Project Proposal"
-shorttitle        : "A replication of Nekmat et al.(2015)"
-
-author: 
-  - name          : "Mufan Luo"
-    affiliation   : "1"
-    corresponding : yes    # Define only one corresponding author
-    address       : "Postal address"
-    email         : "mufanl@stanford.edu"
-
-
-affiliation:
-  - id            : "1"
-    institution   : "Stanford University"
-
-author_note: |
-  Department of Communication
-
-
-abstract: |
-  This is a project proposal of replication of Nekmat, Gower, Zhou, and Metzger (2015).  
-  
-keywords          : "keywords"
-wordcount         : "X"
-
-bibliography      : ["references.bib"]
-
-figsintext        : no
-figurelist        : no
-tablelist         : no
-footnotelist      : no
-lineno            : yes
-
-lang              : "english"
-class             : "man"
-output            : papaja::apa6_word 
+title: "Project Proposal"
+author: "Mufan Luo"
+date: "10/7/2017"
+output: html_document
+includes:
+   in_header: header.tex
+   before_body: doc_prefix.tex
+   after_body: doc_suffix.tex
 ---
 
-```{r load_packages, echo=FALSE}
-library(knitr)
-library(ggplot2)
-library(broom)
-library(devtools)
-library(citr)
-library(papaja)
-```
-
-```{r analysis_preferences, echo=FALSE}
-# Seed for random number generation
-set.seed(42)
-```
 # Project Proposal 
 ## Rationale
 For the final project in PSYCH251, I choose to replicate an experiment documented in Nekmat and colleagues (2015). My choice of experiment largely depends on my personal research interests and the statistic analysis technique that will be used in my future research. First, my research interests include online credibility, with a specific focus on the effects of social media affordances on believability and deception detections. For example, a current project aims to examine whether relational closeness and social endorsement can influence people’s judgments of the news veracity on Facebook. Nekmat, Gower, Zhou, and Metzger (2015) employed an experiment to investigate the effects of message source (personal: friends, family, vs. impersonal: organization) on individuals’ willingness to engage in connective-type collective activities on social media (e.g., commenting). In particular, they included a key mediator---cognitive elaboration, and several moderators (e.g., perceived source credibility), which all had significant influence on online engagement. Their experiment is a good reference to my research, especially regarding the way they controlled relational closeness of the message source. Second, in order to test their hypotheses, the study run both moderation and mediation analyses which are of great importance in examining online mechanisms behind online information processing and/ or interpersonal processing. 
@@ -60,12 +19,3 @@ In order to replicate this experiment, I will need to recruit at least 200 parti
 ## Challenges
 The main challenges will lie in the different sample used in the replication experiment. The original experiment recruited college students from a university. Therefore, the message used in the experiment about removing the quad was highly relevant to the participants. However, the recruitment process of my replication work will be done on MTurk where people may not have common ground on a particular public issue. Thus, I may need to create another message. Alternatively, I may also rely on a student sample by recruiting 200 Stanford students and make the message relevant to a Stanford-related issue. Second, with respect to data analysis, the study employed an SPSS-installed macro, PROCESS (Hayes, 2013), a commonly used statistical package to test moderated mediation. To replicate the analysis in R, I may need to explore and learn the specific programming methods. However, I believe it will be an excellent learning process. 
 
-\newpage
-
-# References
-```{r create_r-references}
-r_refs(file = "references.bib")
-my_citation <- cite_r(file = "references.bib")
-```
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{0.5in}
