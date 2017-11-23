@@ -1,5 +1,5 @@
 ---
-title: "Replication of Study by Nekmat and colleagues (2015, Communication Research) (200x, Psychological Science)"
+title: "Replication of Study by Nekmat and colleagues (2015, Communication Research)"
 author: "Mufan Luo (mufanl@stanford.edu)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
@@ -14,37 +14,42 @@ output:
 
 ##Introduction
 
-[No abstract is needed.]  Each replication project will have a straightforward, no frills report of the study and results.  These reports will be publicly available as supplementary material for the aggregate report(s) of the project as a whole.  Also, to maximize project integrity, the intro and methods will be written and critiqued in advance of data collection.  Introductions can be just 1-2 paragraphs clarifying the main idea of the original study, the target finding for replication, and any other essential information.  It will NOT have a literature review -- that is in the original publication. You can write both the introduction and the methods in past tense.  
-
+The main goal of the original study was to examine the effects of personal sources of online messages on individuals' willingness to engage in connective-type collective activities on social media. It also investigated whether this causal relationship was moderated by perceived credibility, and mediated by cognitive elaboration. This replication project focused on the main effect of the information source on online participation, and the moderating role of perceived credibility. 
 
 ##Methods
 
+The original study was an online experiment manipulating message source (i.e., close personal source vs. impersonal organizational source). The experiment consisted of a pretest which involved all control variables and a posttest including dependent variables, a moderator, and a mediator conducted a weak after.
 
 ###Power Analysis
 
-Original effect size of the main effect ($N$ = 202) was $f^2$ = .394. Given this effect size, the power of 95% and $\alpha$ = .05, the final sample size of this replication project was 58. This sample size is feasible given the timeline. 
+Original effect size of the main effect ($N$ = 202) was $f^2$ = .394. Therefore, in a priori analysis, I set the test family as f test, $\alpha$ probability as .05, and the power as .95, the final sample size of this replication project was 58. This sample size is feasible given the timeline.
 
 ###Planned Sample
 
-Following the original study, this replication work recruited undergraduates enrolled in Psychology and Communication courses at Stanford University who participated the study for extra credit. This sample would be very similar to the original study with regards to age and gender.  
+Following the original study, this replication work recruited undergraduates enrolled in Psychology and Communication courses at Stanford University who participated the study for extra credit. This sample would be very similar to the original study with regards to age and gender (only age and gender were reported in the original study). 
 
 ###Materials
 
-All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+Following the original study, "two scenarios in the experiment consited of the same message by a fictional student environmental activist group on campus that read, 'The University is removing the Quad [central
+park] to build classrooms and offices. The group Students for Nature is campaigning against this. Please support.'Participants were given instructions that said, 'You have received this message from [specific source variable tested] on one of your social media accounts (e.g., Twitter, Facebook, etc.).' All messages were less than 140 characters,
+and so could plausibly appear in any popular social media platform."
+Again, following the same instructions, participants were either told that the message had come from (1) a member of their close personal network (i.e., “someone to whom you are very close. The person might
+be a family member, friend, classmate, or anyone else you know personally”; or (2) an organizational source (i.e., “an official from the group Students for Nature”).
 
 ###Procedure	
-
-The original study conducted two studies. Specifically, "to reduce, if not remove, any systematic influences from participants' self-report of personal issue involvement attitude toward activism, and perceived efficacy, data on these predispositional factors were collected as the study's control variables in the first questionniare. Participants were then randomly assigned to one of two source scenarios in the second questionnaire administedred 7 days later". 
+The experiment can be found here: [Nekmat Replication](https://stanforduniversity.qualtrics.com/jfe/form/SV_9HtwvJqPfeBajUV)
+"Participants who received the message from a close personal
+source were asked to write on the questionnaire the name of a person to whom they were close and connected to via social media, so as to create a more “personalized” and realistic scenario." After reading the post, participants answered questions regarding a manipulation check, dependent variables, a moderator (i.e., perceived credibility) and a mediator (i.e., cognitive elaboration) in the original study. 
 
 ###Analysis Plan
+Hierarchical regression analysis is needed to test the effect of information source on online participation (H1 main effect). MANCOVA will be applied to investigate the effect of information source on individuals' willingness to engage in different types of connective-collective activities (R1).Multivariate regression analysis is needed for both H3 and H4 in the original study, the moderating role of perceived source credibility on willingness of online participation and cognitive elaboration. 
 
-Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
-
-**Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
+**Clarify key analysis of interest here** 
+Key analysis includes a hierarchical regression analysis of the main effect.
 
 ###Differences from Original Study
 
-Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+With respect to the sample size, the original study recruited 208 undergraduates whereas the current replication project involved 58 participants. A key difference lies in the procedure. The original study conducted two studies, including pretest and posttest. Specifically, "to reduce, if not remove, any systematic influences from participants' self-report of personal issue involvement attitude toward activism, and perceived efficacy, data on these predispositional factors were collected as the study's control variables in the first questionniare. Participants were then randomly assigned to one of two source scenarios in the second questionnaire administedred 7 days later". Given the tight timeline, the current replication study combined two studies, measuring all control variables, dependent variables, mediator and moderator simultanesouly. Although the original study identified the reason to conduct a pretest a weak earlier than the main experiment, the systematic influences may not affect the final result significantly (cites). Third, the experiment stimulus in the replication study was distinct from the original one, although both of them dealt with the same social issue---protecting the environment. The original stimuli read "The University is removing the Quad to build classrooms and offices. The group Students for Nature is campaigning against this". To make the stimulus more realistic and plausible to Stanford students, the online post used in the replication study read "The University plans to open offices and build classrooms in the area surrounding the Dish. The group Students for Sustainable Stanford is campaigning against this." The modification of the message stimuli is both necessary and important, given the sample of Stanford students. 
 
 ### Methods Addendum (Post Data Collection)
 
@@ -65,22 +70,128 @@ You can comment this section out prior to final report with data collection.
 Data preparation following the analysis plan.
 	
 ```{r include=F}
-###Data Preparation
-
 ####Load Relevant Libraries and Functions
-
+library(psy)
+library(tidyverse)
+library(MANOVA.RM)
+library(ggplot2)
 ####Import data
-
-#### Data exclusion / filtering
-
+data <- read.csv(file = "/Users/mufanluo/psych251/Nekmat2015/pilota_cleaned.csv", header = TRUE)
+head(data)
 #### Prepare data for analysis - create columns etc.
+attach(data)
+## manipulation check
+a <- cbind(M1, M2, M3)
+cronbach(a)
+newd <- data%>%
+  mutate(manipulation = apply(a, 1, mean))
+## perceived credibility 
+b <- cbind(credible_1, credible_2, credible_3, credible_4, credible_5)
+cronbach(b)
+newd <- newd%>%
+  mutate(credibility = apply(b, 1, mean))
+##online action
+c<- cbind(action_1, action_2, action_3, action_4, action_5, action_6, action_7, action_8)
+cronbach(c)
+newd <- newd%>%
+  mutate(action = apply(c, 1, mean))
+##cognitive elaboration
+d <- cbind(CE_1, CE_2)
+cronbach(d)
+newd <- newd%>%
+  mutate(elaboration = apply(d, 1, mean))
+##involvement 
+e <- cbind(INV_1, INV_2, INV_3, INV_4)
+cronbach(e)
+newd <- newd%>%
+  mutate(involvement = apply(e, 1, mean))
+##attitude
+f <- cbind(ATT_1, ATT_2, ATT_3, ATT_4, ATT_5)
+cronbach(f)
+newd <- newd%>%
+  mutate(attitude = apply(f, 1, mean))
+##percevied self-efficacy 
+g <- cbind(EFF_1_1, EFF_1_2)
+cronbach(g)
+newd <- newd%>%
+  mutate(efficacy = apply(g, 1, mean))
+##internet efficacy 
+h <- cbind(EFF_1_3, EFF_1_4)
+cronbach(h)
+newd <- newd%>%
+  mutate(tech_efficacy = apply(h, 1, mean))
+j <- cbind(EFF_1_1, EFF_1_2, EFF_1_3, EFF_1_4)
+cronbach(j)
+##group efficacy
+i <- cbind(EFF_2_1, EFF_2_2, EFF_2_3, EFF_2_4, EFF_2_5)
+cronbach(i)
+newd <- newd%>%
+  mutate(internal = apply(j, 1, mean))
+newd <- newd%>%
+  mutate(group_eff = apply(i, 1, mean))
+newd2 <- newd[c(1:2, 39:50, 11:17)]
 ```
 
 ### Confirmatory analysis
 
-The analyses as specified in the analysis plan.  
+Manipulation check of personal-ness of information source
+```{r, message=FALSE}
+source <- as.factor(Source)
+check <- lm (manipulation ~ source, data = newd2)
+summary(check)
+personal <- newd2%>%
+  filter(Source =="personal")
+impersonal <- newd2%>%
+  filter(Source =="impersonal")
+mean(personal$manipulation)
+mean(impersonal$manipulation)
+sd(personal$manipulation)
+sd(impersonal$manipulation)
+```
 
-*Side-by-side graph with original graph is ideal here*
+H1: Receiving messages directly from personal sources (i.e., family,
+friends) as compared with impersonal sources (i.e., organizational source) will lead to greater willingness to participate in connective-collective activities on social
+media.
+```{r, message=FALSE}
+attach(newd2)
+lm1 <- lm(action ~ source)
+qplot(x = source, y = action, data = newd2) + geom_smooth(method = "lm")
+lm2 <- lm(action ~ source + attitude + involvement + internal + group_eff)
+summary(lm1)
+summary(lm2)
+anova(lm1, lm2)
+##The results for now did not make sense.
+```
+RQ1: Are there significant differences between personal
+and impersonal sources in influencing individuals’ willingness to engage in the different types of connective-collective activities?
+```{r, message=FALSE}
+mod1 <-manova(c ~ source + attitude + involvement + internal + group_eff)
+summary(mod1)
+mod2 <- manova(c ~ source + elaboration)
+#summary(mod2)
+```
+
+H3: Predicted that perceived source credibility will moderate source effects by being positively related to willingness to carry out the collective activities.
+```{r,message=FALSE}
+mod3 <- lm(action ~ source*credibility)
+summary(mod3)
+```
+
+H4: Perceived source credibility will moderate the influence of
+personalness of source on cognitive elaboration, such that perceived credibility is positively related to cognitive elaboration.
+```{r, message=FALSE}
+mod4 <- lm(elaboration ~ source*credibility)
+summary(mod4)
+```
+
+*Figure 1*
+```{r}
+qplot(x = credibility, y = action, data = newd2, color = source) + 
+  geom_smooth(method = "lm")
+qplot(x = credibility, y = elaboration, data = newd2, color = source)+
+  geom_smooth(method = "lm")
+```
+
 
 ###Exploratory analyses
 

@@ -1,0 +1,6 @@
+ResponseId,Source,M1,M2,M3,credible_1,credible_2,credible_3,credible_4,credible_5,action_1,action_2,action_3,action_4,action_5,action_6,action_7,action_8,CE_1,CE_2,INV_1,INV_2,INV_3,INV_4,ATT_1,ATT_2,ATT_3,ATT_4,ATT_5,EFF_1_1,EFF_1_2,EFF_1_3,EFF_1_4,EFF_2_1,EFF_2_2,EFF_2_3,EFF_2_4,EFF_2_5,gender,age
+R_269KP9Z4t1VkxQI,impersonal,1,1,1,4,4,5,5,5,2,2,4,4,2,2,2,2,4,3,6,6,4,4,7,7,4,4,7,3,2,5,5,6,6,6,4,4,2,30
+R_2b3r0LJr6cK3jbG,personal,4,4,4,6,6,5,5,5,6,5,4,3,3,3,3,3,6,6,7,6,7,6,5,4,4,4,4,4,4,5,5,3,5,6,5,5,1,27
+R_vH3857ZtYVy4Ttf,personal,4,4,4,7,7,7,7,7,5,4,2,2,2,3,2,2,6,5,7,6,6,5,5,5,5,5,4,4,4,6,6,5,5,4,5,5,2,28
+R_ysvyTffK9aa2o5H,impersonal,2,2,1,6,5,4,6,4,5,5,2,2,3,5,2,1,6,4,6,3,6,5,4,5,4,4,4,5,2,6,5,4,5,4,5,4,1,24
+R_2zSHRBYSqAOx4id,impersonal,1,1,1,4,4,5,4,4,2,2,2,1,2,2,2,2,3,2,5,5,3,3,6,6,6,5,6,4,5,5,5,5,5,5,5,6,2,28
