@@ -30,26 +30,27 @@ Following the original study, this replication work recruited undergraduates enr
 
 ###Materials
 
-Materials of the experimental stimuli were critical in this replication project. Here, both instructions and message stimuli were discussed in details. 
-First, with respect to message stimuli, the original study created an online post that read *"The University is removing the Quad[central park] to build classrooms and offices. The group Students for Nature is campaigning against this. Please support."*
-Second, participants read the instructions that said, *"You have received this message from [specific source variable tested] on one of your social media accounts(e.g., Twitter, Facebook, etc.)."* In addition, following the same instructions of the original study, participants were either told that the message had come from *"(1)a member of their close personal network (i.e., someone to whom you are very close). The person might be a family member, friend, classmate, or anyone else you know personally; or (2) an organizational source (i.e., an official from the group Students for Nature)"*.
+Materials of the experimental stimuli were critical in this replication project. Here, both instructions and message stimuli were discussed in details.  First, with respect to message stimuli, the original study created an online post that read *"The University is removing the Quad[central park] to build classrooms and offices. The group Students for Nature is campaigning against this. Please support."*
+
+Second, participants read the instructions that said, *"You have received this message from [specific source variable tested] on one of your social media accounts(e.g., Twitter, Facebook, etc.)."*  In addition, following the same instructions of the original study, participants were either told that the message had come from *"(1)a member of their close personal network (i.e., someone to whom you are very close). The person might be a family member, friend, classmate, or anyone else you know personally; or (2) an organizational source (i.e., an official from the group Students for Nature)"*.
 
 ###Procedure	
 The experiment can be found here: [Nekmat Replication](https://stanforduniversity.qualtrics.com/jfe/form/SV_9HtwvJqPfeBajUV)
 In this replication study, participants signed the consent form and entered the above survey. They were randomly assigned to two conditions (a personal source vs. an organizational source), reading the same message but different instructions (see the Material section). In particular, following the original study, *"participants who received the message from a close personal source were asked to write on the questionnaire the name of a person to whom they were close and connected to via social media"*. After reading the online post, participants answered questions regarding a manipulation check, dependent variables, moderating (i.e., perceived credibility) and mediating (i.e., cognitive elaboration) variables, four control variables (personal issue involvement, attitude toward activism, perceived efficacy), and demographic information in the original study. 
 
 ###Analysis Plan
-First, hierarchical regression analysis is needed to test the effect of information source on online participation (H1). In addition, MANCOVA will be applied to investigate the effect of information source on individuals' willingness to engage in different types of connective-collective activities (R1). Last, multivariate regression analysis is needed to examine the moderating role of perceived source credibility on willingness of online participation (H3) and cognitive elaboration (H4). 
+Most importantly, a hierarchical regression analysis is needed to test the effect of information source on online participation (H1). In addition, MANCOVA will be applied to investigate the effect of information source on individuals' willingness to engage in different types of connective-collective activities (R1). Last, multivariate regression analysis is needed to examine the moderating role of perceived source credibility on willingness of online participation (H3) and cognitive elaboration (H4). 
 
 **Clarify key analysis of interest here** 
 Key analysis includes a hierarchical regression analysis of H1*("when compared with messages passed by organizational sources, those passed by personally closer people (e.g., friends, family) would lead to greater willingness to participate in collective activities on social media)"* Results in the original study showed that blocking for control variables, personally closer sources were significantly more influential ($M = 5.44, SD = 1.21$) than organizational sources ($M = 4.02, SD = 1.41$), with $\Delta R^2 = .194, F(5, 207) = 15.98, p < .001, \beta = .44, f^2 = .394, R^2 = .27 (adjusted)$. Among the covariates, significant relationships were found for personal issue involvement ($\beta = .210, p < .001$) and perceived internal efficacy ($\beta = .208, p < .01$).
 
 ###Differences from Original Study
 
-The current replication study is different from the original one from the following perspectives. 
-The first and most noticalbe difference is the sample size: N = 208 (original study) vs. 58 (replication study). 
-The second main difference is concerned with the study procedure. The pretest and posttest, in the original study, were conducted seperately at 7 days interval. The original paper argued that *"to reduce, if not remove, any systematic influences from participants' self-report of personal issue involvement attitude toward activism, and perceived efficacy, data on these predispositional factors were collected as the study's control variables in the first questionniare. Participants were then randomly assigned to one of two source scenarios in the second questionnaire administedred 7 days later"*. However, given the tight timeline, the current replication study combined two studies, measuring all control variables, dependent variables, mediator and moderator simultanesouly. I would argue that the systematic influences may not affect the final result significantly. 
-Third, the experiment stimulus in the replication study was distinct from the original one, although both of them dealt with the same social issue---protecting the environment. To make the message stimulus more realistic and plausible to Stanford students, the online post used in the replication study read "The University plans to open offices and build classrooms in the area surrounding the Dish. The group Students for Sustainable Stanford is campaigning against this." The modification of the message stimuli is both necessary and important, due to the different college sample of Stanford undergraduates. 
+The current replication study is different from the original one from the following perspectives.  The first and most noticalbe difference is the sample size: N = 208 (original study) vs. 58 (replication study).
+
+The second main difference is concerned with the study procedure. The pretest and posttest, in the original study, were conducted seperately at 7 days interval. The original paper argued that *"to reduce, if not remove, any systematic influences from participants' self-report of personal issue involvement attitude toward activism, and perceived efficacy, data on these predispositional factors were collected as the study's control variables in the first questionniare. Participants were then randomly assigned to one of two source scenarios in the second questionnaire administedred 7 days later"*. However, given the tight timeline, the current replication study combined two studies, measuring all control variables, dependent variables, mediator and moderator simultanesouly. I would argue that the systematic influences may not affect the final result significantly. Third, the experiment stimulus in the replication study was distinct from the original one, although both of them dealt with the same social issue---protecting the environment. To make the message stimulus more realistic and plausible to Stanford students, the online post used in the replication study read *"The University plans to open offices and build classrooms in the area surrounding the Dish. The group Students for Sustainable Stanford is campaigning against this."* The modification of the message stimuli is both necessary and important, due to the different college sample of Stanford undergraduates.
+
+Last, the original study also included a full page of ...
 
 ### Methods Addendum (Post Data Collection)
 
@@ -71,6 +72,7 @@ Data preparation following the analysis plan.
 	
 ```{r include=F}
 ####Load Relevant Libraries and Functions
+rm(list = ls())
 library(psy)
 library(psych)
 library(tidyverse)
@@ -140,7 +142,7 @@ describe(newd2[, 3:21])
 
 First, Manipulation check of experimental treatment: personal-ness of information source.
 ```{r, message=FALSE}
-source <- as.factor(Source)
+newd2$source <- as.factor(newd2$Source)
 check <- lm (manipulation ~ source, data = newd2)
 summary(check)
 personal <- newd2%>%
@@ -152,8 +154,7 @@ mean(impersonal$manipulation)
 sd(personal$manipulation)
 sd(impersonal$manipulation)
 ```
-Second, key analysis of H1: Receiving messages directly from personal sources (i.e., family,friends) as compared with impersonal sources (i.e., organizational source) will lead to greater willingness to participate in connective-collective activities on social.
-media.
+Second, key analysis of *H1: Receiving messages directly from personal sources (i.e., family,friends) as compared with impersonal sources (i.e., organizational source) will lead to greater willingness to participate in connective-collective activities on social media*
 ```{r, message=FALSE}
 attach(newd2)
 ##hiearachical linear regression
@@ -163,48 +164,54 @@ lm3 <- lm(action ~ attitude + involvement + internal + group_eff)
 summary(lm1)
 summary(lm2)
 summary(lm3)
-##Using anova to compare models to examine if controling for 4 variables could improve the model fit.
+##Using anova to compare models to examine if controlling for 4 variables could improve the model fit.
 anova(lm1, lm2, lm3)
 ```
 
 *Figure 1*
 Using barplot to visualize the main effect of personal-ness of online participation. 
 ```{r}
-ggplot(data=newd2, aes(x= source, y=action)) +
-  geom_bar(stat="identity")
+newd3 <- newd2 %>%
+  group_by(source)%>%
+  summarise(avg_act = mean(action))
+newd3
+
+ggplot(newd3, aes(x= source, y=avg_act)) +
+  geom_bar(stat="identity", aes(fill=source), width = 0.5) + labs(x = "Personal-ness of information source", y = "Connective-collective action") + scale_y_continuous(limits = c(0,4))
 ```
 
 ###Exploratory analyses
 
-In addition to the key analysis, this replication project also investigated R1, H3 and H4 in the original study. 
+In addition to the key analysis, this replication project also investigated R1, H3 and H4 proposed in the original study to examine if this is a partial or a full successful replication. 
 
-RQ1: Are there significant differences between personal and impersonal sources in influencing individuals’ willingness to engage in the different types of connective-collective activities?
+*RQ1: Are there significant differences between personal and impersonal sources in influencing individuals’ willingness to engage in the different types of connective-collective activities?*
 ```{r}
-mod1 <-manova(act ~ source + attitude + involvement + internal + group_eff, data = newd2)
-summary(mod1)
-mod2 <- manova(act ~ source + elaboration, data = newd2)
+manova1 <-manova(act ~ source + attitude + involvement + internal + group_eff, data = newd2)
+#summary(manova1)
+manova2 <- manova(act ~ source + elaboration, data = newd2)
 #summary(mod2)
 ```
 
-H3: Predicted that perceived source credibility will moderate source effects by being positively related to willingness to carry out the collective activities.
+*H3: Predicted that perceived source credibility will moderate source effects by being positively related to willingness to carry out the collective activities.*
 ```{r}
-mod3 <- lm(action ~ source*credibility)
-summary(mod3)
+manova3 <- lm(action ~ source*credibility)
+summary(manova3)
 ```
 
-H4: Perceived source credibility will moderate the influence of
-personalness of source on cognitive elaboration, such that perceived credibility is positively related to cognitive elaboration.
+*H4: Perceived source credibility will moderate the influence of
+personalness of source on cognitive elaboration, such that perceived credibility is positively related to cognitive elaboration*
 ```{r}
-mod4 <- lm(elaboration ~ source*credibility)
-summary(mod4)
+manova4 <- lm(elaboration ~ source*credibility)
+summary(manova4)
 ```
 
-Finally, try to replicate the interaction plots in the original study. 
+Finally, I tried to replicate the interaction plots (H3 and H4) specified in the original study. 
 ```{r}
+##H3
 qplot(x = credibility, y = action, data = newd2, color = source) + 
   geom_smooth(method = "lm")
-qplot(x = credibility, y = elaboration, data = newd2, color = source)+
-  geom_smooth(method = "lm")
+##H4
+qplot(x = credibility, y = elaboration, data = newd2, color = source)+ geom_smooth(method = "lm")
 ```
 
 
