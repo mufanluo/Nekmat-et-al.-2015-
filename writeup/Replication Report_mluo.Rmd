@@ -16,15 +16,15 @@ fontsize: 12pt
 
 ##Introduction
 
-The main goal of the original study was to examine the effects of personal sources of online messages on individuals' willingness to engage in connective-type collective activities on social media. It also investigated whether this causal relationship was moderated by perceived credibility, and mediated by cognitive elaboration. This replication project focused on the main effect of the information source on online participation, and the moderating role of perceived credibility in the causal relationship.
+The main goal of the original study was to examine the effects of personal sources of online messages on individuals' willingness to engage in connective-type collective activities on social media. It also investigated whether this causal relationship was moderated by perceived credibility, and mediated by cognitive elaboration. This replication project focused on the main effect of the information source on online participation, and the moderating role of perceived credibility.
 
 ##Methods
 
-The original study was an online experiment manipulating message source (i.e., close personal source vs. impersonal organizational source). The original experiment consisted of a pretest which involved four control variables and a posttest which included the actual experiment and measured the dependent variable, the mediating and the moderating variables administered a week later.
+The original study was an online experiment manipulating message source (i.e., close personal source vs. impersonal organizational source). The original experiment consisted of a pretest which involved four control variables and a posttest about the actual experiment administered a week later.
 
 ###Power Analysis
 
-The effect size of the main effect reported in the original study was $f^2 = .394$ ($F (5, 207)$ = 15.98, $p <.001$). The posthoc power, missing in the original study, calculated through GPower by the replication researcher was almost 1.0. To identify the sample size for the replication study, I set the test family as $F$ test (ANOVA: Fixed effects, special, main effects and interactions), and $\alpha$ probability as .05. Three different sample sizes were obtained depending on different power. In particular, 95% power required 58 participants. 90% power led to $N = 49$ sample size, and 80% power led to $N = 40$. I decided to recruit 58 participants for this replication project, since 95% power was close to the posthoc power of the original study (99.9%). Note: Screenshots of power analysis results are accessible through [Open Science Framework](https://osf.io/c2a9h/).
+The effect size of the main effect reported in the original study was $f^2 = .394$ ($F (5, 207)$ = 15.98, $p <.001$). The posthoc power, missing in the original study, calculated through GPower by the replication researcher, was almost 1.0. To identify the sample size for the replication study, I set the test family as $F$ test (ANOVA: Fixed effects, special, main effects and interactions), and $\alpha$ probability as .05 in GPower. Three different sample sizes were obtained depending on different power. In particular, 95% power required 58 participants. 90% power led to a sample size of $N = 49$, and 80% power led to $N = 40$. I decided to recruit 58 participants for this replication project, since 95% power was close to the posthoc power of the original study (99.9%). Note: Screenshots of power analysis results are accessible through [Open Science Framework](https://osf.io/c2a9h/).
 
 ###Planned Sample
 
@@ -36,20 +36,20 @@ Materials of the experimental stimuli were critical in this replication project.
 
 > "The University is removing the Quad [central park] to build classrooms and offices. The group Students for Nature is campaigning against this. Please support."
 
-Second, participants read the instructions that said,
+Second, participants received instructions as follows,
 
 > "You have received this message from [specific source variable tested] on one of your social media accounts(e.g., Twitter, Facebook, etc.)."
 
-In addition, following the same instructions of the original study, participants were either told that the message had come from 
+In addition, depending on which condition participants were assigned to, they were either told that the message had come from 
 
 > "(1) A member of their close personal network (i.e., someone to whom you are very close). The person might be a family member, friend, classmate, or anyone else you know personally; or (2) an organizational source (i.e., an official from the group Students for Nature)."
 
 ###Procedure	
 The replicated experiment can be found here: [Nekmat Replication](https://stanforduniversity.qualtrics.com/jfe/form/SV_9HtwvJqPfeBajUV).
 
-Participants signed the consent form and entered the above survey. They were randomly assigned to two conditions (a personal source vs. an organizational source), reading the same message but different instructions. In particular, following the original study, participants who received the message from a close personal source 
+Participants signed the consent form and entered the above survey. They were randomly assigned to two conditions (a personal source vs. an organizational source), reading an online post about the environment issue and different instructions. In particular, following the original study, participants who received the message from a close personal source were asked to  
 
-> "Were asked to write on the questionnaire the name of a person to whom they were close and connected to via social media." 
+> "Write on the questionnaire the name of a person to whom they were close and connected to via social media." 
 
 After reading the online post and the instructions, participants answered questions regarding the manipulation check, dependent variables (i.e., likelihood to participate in collective-actions), the moderating (i.e., perceived credibility) and the mediating (i.e., cognitive elaboration) variables, four control variables (i.e., personal issue involvement, attitude toward activism, perceived efficacy), and demographic information specified in the original study. 
 
@@ -90,7 +90,7 @@ This replication study did not involve a mock website , as the campaign issue ab
 
 #### Actual Sample
 
-In total 70 participants took the survey. Two responses came from tests by the researchers, and 13 contained a large number of NA values. Removing these responses led tot he final sample size as 55.
+In total 70 participants took the survey. Two responses came from pre-tests by the researchers, and 13 contained a large number of missing values. Removing these responses led to the final sample size of 55. 26 of participants were female, 28 were male, and 1 self-identified as other. The average age was 19.3 ($SD = 1.22$). 
 
 #### Differences from pre-data collection methods plan
 None. 
@@ -190,11 +190,12 @@ newd2$gender = as.factor(newd2$gender)
 **Cognitive elaboration** included two questions: (1) “How carefully did you read the
 information received?” and (2) “How much were you thinking about the information?” Participants rated on a 7-point scale (1 = very little, 7 = very much) (Cronbach’s $\alpha = .68, M = 4.33, SD = 1.27$).
 
-**Covaraites** were also measured on a 7-point scale, which involved personal issue involvement ($M = 5.25, SD = 1.07$, Cronbach's $\alpha = .84$), attitudes toward activism ($M = 5.38, SD = .97$, Cronbach's $\alpha = .90$), internal efficacy ($M = 4.32, SD = 1.04$, Cronbach's $\alpha = .74$), and external efficacy ($M = 4.85, SD = .74$, Cronbach's $\alpha = .61$). 
+**Covariates** were also measured on a 7-point scale, which involved personal issue involvement ($M = 5.25, SD = 1.07$, Cronbach's $\alpha = .84$), attitudes toward activism ($M = 5.38, SD = .97$, Cronbach's $\alpha = .90$), internal efficacy ($M = 4.32, SD = 1.04$, Cronbach's $\alpha = .74$), and external efficacy ($M = 4.85, SD = .74$, Cronbach's $\alpha = .61$). 
 
 ```{r results = 'asis'}
 stargazer(newd2, type = "html", title="Table 1. Descriptive statistics", digits=2, summary.stat = c("n", "mean", "sd"), no.space = TRUE, covariate.labels = c("Age", "Perceived closeness", "Perceived credibility", "Collective actions", "Cognitive elaboration", "Personal issue involvement", "Attitude toward activism", "Internal efficacy", "External efficacy"))
 ```
+
 
 Manipulation check was performed by participants indicating on a 7-point scale (1 = very little, 7 = very much): (1) “How close are you to the person who sent the message to you?” (2) “How well do you know the person?” and (3) “How frequently do you meet with the person?” (Cronbach’s $\alpha = .97$). Significant differences in the anticipated direction were found ($F(1, 53) = 102.46, p < .001$) for personal source ($M = 6.10, SD =.61$) versus organizational source ($M = 2.66, SD = 1.64$).
 
@@ -243,7 +244,7 @@ kable(etaSquared(lm3, anova = FALSE))
 
 *Figure 1. Effects of personal-ness of source on collective actions*
 
-The barplot shows that although personal source yields higher connective-collective actions than the impersonal source, the difference was trivial. 
+The barplot shows that although personal source yields higher connective-collective actions than the impersonal source, the difference was small and not significant. 
 
 ```{r}
 sem <- function(x) {sd(x, na.rm=TRUE) / sqrt(sum(!is.na((x))))}
@@ -271,10 +272,10 @@ In addition to the key analysis, this replication project also conducted explora
 > H3: Perceived source credibility will moderate source effects by being positively related to willingness to carry out the collective activities.
 
 > H4: Perceived source credibility will moderate the influence of
-personalness of source on cognitive elaboration, such that perceived credibility is positively related to cognitive elaboration.
+personal-ness of source on cognitive elaboration, such that perceived credibility is positively related to cognitive elaboration.
 
 Replication results did not show significant interaction
-between personalness of source and perceived source credibility on willingness to participate in collective action ($F(7, 47) = 1.89, p >.05, R^2 = .21$), or cognitive elaboration ($F(3, 51) = 1.62, p >.05, R^2 = .09$) (See Table 4 and 5 for regression results). Only internal efficacy was significantly associated with collective action ($\beta = .34, p <.05$). Figure 2 shows the interaction graph, which provides visual evidence of no interaction effect. Therefore, neither H3 nor H4 was supported in the replication. 
+between personal-ness of source and perceived source credibility on willingness to participate in collective action ($F(7, 47) = 1.89, p >.05, R^2 = .21$), or cognitive elaboration ($F(3, 51) = 1.62, p >.05, R^2 = .09$) (See Table 4 and 5 for regression results). Only internal efficacy was significantly associated with collective action ($\beta = .34, p <.05$). 
 
 ```{r results = 'asis'}
 mod3 <- lm(action ~ Source*credibility + activism_attitude + issue_involvement + internal_efficacy + external_efficacy, data = newd2)
@@ -287,17 +288,18 @@ stargazer(mod4, type = "html", title = "Table 5. Interaction between source and 
 ```
 
 
-*Figure 2. The moderating role of perceived credibility*
+Figure 2 shows the interaction graph, which provides visual evidence of the non-significant interaction effect. The first graph describes the interaction between perceived credibility and source on collective actions, where the impersonal line was always above the personal line. For the second graph, the personal line was decreasing in elaboration as the perceived credibility increased, which was inconsistant with the original plot. Therefore, neither H3 nor H4 was supported in the replication. 
 
 ```{r}
-ggplot(newd2, aes(x = credibility, y = action, color = Source)) + 
+gg1 <- ggplot(newd2, aes(x = credibility, y = action, color = Source)) + 
   geom_smooth(method = "lm", se = FALSE) + 
   labs(x = "Perceived credibility", y = "Collective-actions") + theme(legend.position="bottom")
 
-ggplot(newd2, aes(x = credibility, y = elaboration, color = Source)) + 
-  geom_smooth(method = "lm", se = FALSE) + 
+gg2 <- ggplot(newd2, aes(x = credibility, y = elaboration, color = Source)) + geom_smooth(method = "lm", se = FALSE) + 
   labs(x = "Perceived credibility", y = "Cognitive elaboration") +
   theme(legend.position = "bottom")
+grid.arrange(gg1, gg2, bottom = "Figure 2. Willingness to participate in connective-collective action and cognitive elaboration
+as a function of personalness of source and perceived source credibility.")
 ```
 
 ## Discussion
@@ -308,10 +310,10 @@ Confirmatory analysis suggests that this replication **failed**, as replication 
 
 ### Commentary
 
-First, the replication study did not strictly follow the procedures and message stimuli identified in the original study. As discussed earlier, the replication study measured all the variables at one time rather than separating the measurement of covaraites (in the pre-test) and the actual experiment (in the post-test). Therefore, systematic influences derived from individuals' predispositional factors may exist and bias the findings. 
+First, the replication study did not strictly follow the procedures and message stimuli identified in the original study. As discussed earlier, the replication study measured all the variables at one time rather than separating the measurement of covariates (in the pre-test) and the actual experiment (in the post-test). Therefore, systematic influences derived from individuals' predispositional factors may exist and bias the findings. 
 
-Second, the non-significant finding can be contributed to the different message stimuli used in the replication study, even though the revised online post remained the same as the original post in terms of topic, length, and format. Perhaps, the social issue, opening new offices and classrooms in the area surrounding the Dish, described in the replication study was not important or interesting to Stanford undergrads, which led to an overall low likelihood of collective actions ($M = 2.40, SD = 1.18$). The overall low score of the dependent variable may disguise the real effect. However, the univariate analysis of personal issue involvement shows that participants actually thought the social issue moderately important ($M = 5.22, SD = 1.07$), which challenges the hypothesis above. 
+Second, the non-significant finding can be contributed to the different message stimuli used in the replication study, even though the revised online post remained the same as the original post in terms of topic, length, and format. Perhaps, the social issue, opening new offices and classrooms in the area surrounding the Dish, described in the replication study was not important or interesting to Stanford undergrads, which led to an overall low likelihood of collective actions ($M = 2.40, SD = 1.18$). The overall low score of the dependent variable may disguise the real effect. However, the univariate analysis of personal issue involvement shows that participants actually thought the social issue moderately important ($M = 5.22, SD = 1.07$), which challenges the above hypothesis. 
 
-Furthermore, the additional webpage of a report of the social issue attached in the original study were missing in the replication study due to the limited time for the expeirment setup. This missing material can make the scenario less realistic and less credible to the participants. 
+Furthermore, the additional webpage of a report of the social issue attached in the original study were missing in the replication study due to the limited time for the experiment setup. This missing material can make the scenario less realistic and less credible to the participants. 
 
-Last comments on the inconsistant results between the replication and original study are concerned with the message stimulus. Only one message (a short online post with 140 characters) was used in both the original and replication study, which can include confounding variables, such as the source, context, content, the language use, etc. Using message stimuli is very common in communication research, as communication scholars are interested in message effect and psychological processing of messages as well as the medium where the messages reside and travel. However, the use of message stimuli is also susceptible to external validity and generalizalibity, since participants' reactions and interpretations to a message is highly contingent on the context and content of the message. Communication scholars, back in 1990s, discussed the methodological challenges of using message stimuli in mass communication experiment [Slator (1991)](http:http://journals.sagepub.com/doi/abs/10.1177/107769909106800312). Specifically, appropriately selected messages, multiple messages, and fixed and random effects models are recommended. However, more replication work is needed in communication research to examine the effectiveness of these methods, and more importantly, to facilitate a more power and persuasive research program. 
+Last, as for the message stimuli, only one message (a short online post with 140 characters) was used in both the original and replication study, which can include confounding variables, such as the source, context, content, language, and etc. However, using message stimuli is very common in communication research, as communication scholars are interested in message effect and psychological processing of messages as well as the medium where the messages transmit. However, the use of message stimuli is also susceptible to external validity and generalizability, since participants' reactions and interpretations to a message is highly contingent on the context and content of the message. Communication scholars, back in 1990s, discussed the methodological challenges of using message stimuli in mass communication experiment [(Slator, 1991)](http:http://journals.sagepub.com/doi/abs/10.1177/107769909106800312). Specifically, appropriately selected messages, multiple messages, and fixed and random effects models were suggested. However, more replication work is needed in communication research to examine the effectiveness of these methods, and more importantly, to facilitate a more powerful and persuasive research program. 
